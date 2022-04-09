@@ -50,7 +50,7 @@ function App() {
             href="https://www.linkedin.com/in/the-ankit-kumar-singh/"
             target="_blank"
           >
-            Ankit kumar Singh
+            Ankit Kumar Singh
           </a>
         </p>
       </NoteState>
