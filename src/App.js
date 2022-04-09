@@ -44,6 +44,15 @@ function App() {
             </Switch>
           </div>
         </Router>
+        <p className="text-center fw-bold">
+          Copyright ©{" "}
+          <a
+            href="https://www.linkedin.com/in/the-ankit-kumar-singh/"
+            target="_blank"
+          >
+            Ankit kumar Singh
+          </a>
+        </p>
       </NoteState>
     </>
   );
