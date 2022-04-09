@@ -139,7 +139,7 @@ export const Notes = (props) => {
               <button
                 type="button"
                 onClick={handleclick}
-                className="btn btn-primary"
+                className="btn btn-dark"
                 disabled={
                   note.etitle.length < 5 || note.edescription.length < 5
                 }

@@ -84,7 +84,7 @@ const Login = (props) => {
                 {/* Submit button */}
                 <button
                   type="submit"
-                  className="btn btn-primary btn-lg btn-block"
+                  className="btn btn-dark btn-lg btn-block"
                   onClick={handleSubmit}
                 >
                   Login

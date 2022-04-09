@@ -10,9 +10,9 @@ const Navbar = () => {
   };
   let location = useLocation();
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark vh-10 sticky-top">
+    <nav className="navbar navbar-expand-lg navbar-primary bg-primary vh-10 sticky-top">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand text-white" to="/">
           Digi-Notes
         </Link>
         <button
@@ -30,7 +30,7 @@ const Navbar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link
-                className={`nav-link ${
+                className={`nav-link text-white ${
                   location.pathname === "/" ? "active" : ""
                 }`}
                 aria-current="page"
@@ -41,7 +41,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link
-                className={`nav-link ${
+                className={`nav-link text-white ${
                   location.pathname === "/about" ? "active" : ""
                 }`}
                 to="/about"
@@ -52,15 +52,15 @@ const Navbar = () => {
           </ul>
           {(!localStorage.getItem("token") && (
             <form className="d-flex">
-              <Link className="btn btn-primary mx-1" to="/login" role="button">
+              <Link className="btn btn-dark mx-1 " to="/login" role="button">
                 Login
               </Link>
-              <Link className="btn btn-primary mx-1" to="/signup" role="button">
+              <Link className="btn btn-dark mx-1" to="/signup" role="button">
                 SignUp
               </Link>
             </form>
           )) || (
-            <button className="btn btn-primary mx-1" onClick={handleLogout}>
+            <button className="btn btn-dark mx-1" onClick={handleLogout}>
               Logout
             </button>
           )}
