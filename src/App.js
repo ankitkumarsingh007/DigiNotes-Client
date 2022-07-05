@@ -38,7 +38,7 @@ function App() {
                   <About />
                 </Route>
                 <Route exact path="/text">
-                  <TextForm heading="Try TextUtility" />
+                  <TextForm showAlert={showAlert} />
                 </Route>
                 <Route exact path="/login">
                   <Login showAlert={showAlert} />
